@@ -1,34 +1,40 @@
 ---
 theme: academic
-layout: image-right
+layout: default
 transition: fade
-
-# the image source
-image: /images/Orange_Business_RGB_Cloud_Cloud solutions_Transparent_Background.png
 
 colorSchema: light
 ---
 
-<div class="flex justify-between flex-col h-full">
-    <div>
-      <h1>Mon parcours</h1>
-      <hr class="mt-6 mb-8">
-      <strong>Ewen ROULOIS</strong>
-      <p>Ingénieur Cloud Azure</p>
+<div class="relative h-full">
+    <div class="flex justify-between flex-col h-full">
+        <div>
+        <h1>Découverte des métiers du numérique</h1>
+        <hr class="mt-6 mb-8">
+        <strong>Ingénieur Cloud</strong>
+        </div>
+        <div>
+        <div class="flex flex-col">
+            <span class="mb-4 text-4">Ewen ROULOIS</span>
+            <div>
+                <img class="h-[3rem]" src="/images/Orange_Business_RGB_Small_Logo_Black_Text.svg" />
+            </div>
+        </div>
+        </div>
     </div>
-    <div>
-      <p>Promo 2021</p>
-      <div class="flex items-center">
-        <img class="h-[3rem]" src="/images/Orange_Business_RGB_Small_Logo_Black_Text.svg" />
-      </div>
-    </div>
+    <img src="/images/Orange_Business_RGB_Cloud_Cloud solutions_Transparent_Background.png" class="absolute h-[20rem] bottom-0 right-0" />
 </div>
 
 ---
 layout: default
 ---
 
-__Ewen ROULOIS__
+<div class="flex gap-4 items-center">
+    <div class="rounded-full overflow-hidden w-[3rem] h-[3rem]">
+        <img src="/images/DSC06369.jpg" />
+    </div>
+    <span class="font-bold text-4">Ewen ROULOIS</span>
+</div>
 
 <p v-click>
     Ingénieur Cloud chez Orange Business, spécialisé dans les solutions Microsoft Azure depuis environ 1 an et demi.
@@ -40,6 +46,8 @@ __Ewen ROULOIS__
     <li v-click>l'infra</li>
     <li v-click>l'automatisation</li>
 </ul>
+
+<p v-click>Mon parcours scolaire, mes expériences pro et ma situation actuelle.</p>
 
 ---
 
@@ -113,7 +121,7 @@ layout: default
         <p class="font-bold !mb-0">
             Alternance chez Orange Business
         </p>
-        <p class="text-[0.75rem] !mt-0 font-italic">Janvier 2022 - Août 2024 (1 an et demi)</p>
+        <p class="text-[0.75rem] !mt-0 font-italic">Janvier 2022 - Août 2024 (2 ans et demi)</p>
         <ul class="space-y-2 mt-5">
             <li>Développement .NET et React (TS).</li>
             <li>Mise en place d'infrastructure sur Azure.</li>
@@ -209,9 +217,10 @@ layout: default
     <div class="flex-1 flex flex-col justify-center">
         <ul class="space-y-2 mt-5">
             <li>Maintien en condition opérationnel (mise à jour, dette technique..)</li>
-            <li>FinOPS, SecOPS, DevOPS : DevSecFinOPS 😄</li>
+            <li>Développement et maintien d'<strong>I</strong>nfrastructure <strong>A</strong>s <strong>C</strong>ode (Terraform)</li>
             <li>Architecture, prise de décision et études.</li>
             <li>Automatisation : Backup et rotation automatique, renouvellement de secrets, mise en maintenance...</li>
+            <li>Monitoring : Alertes, collect, visualisation (Grafana)</li>
         </ul>
     </div>
 </div>
@@ -223,10 +232,10 @@ layout: default
 <div>
     <h1 class="mb-4">💻 Mes tips</h1>
     <ol>
-        <li>Choisir l'alternance si possible</li>
-        <li v-click>Garder contact avec ses tuteurs de stage (super important)</li>
+        <li v-click>Choisir l'<strong>alternance</strong> si possible</li>
+        <li v-click><strong>Garder contact</strong> avec ses tuteurs de stage (super important)</li>
         <li v-click>Passer des certifs si possible (bien pour le CV)</li>
-        <li v-click>Être force de proposition et curieux</li>
+        <li v-click>Être force de <strong>proposition</strong> et curieux</li>
     </ol>
 </div>
 
@@ -239,9 +248,14 @@ layout: default
     <div>
       <h1>Merci</h1>
       <hr class="mt-6 mb-8">
+      <p>Des questions ?</p>
     </div>
     <div>
-      <p>Promo 2021</p>
       <img class="h-[3rem]" src="/images/Orange_Business_RGB_Small_Logo_Black_Text.svg" />
     </div>
 </div>
+
+---
+layout: default
+---
+<img class="h-full m-auto" src="/images/T-NBA Global Infrastructure 4.0 NON-PROD.png" />
